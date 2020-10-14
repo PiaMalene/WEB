@@ -1,13 +1,15 @@
 
-
 <!DOCTYPE html>
 <html lang="no">
 <head>
     
     <title>Nyttige lenker</title>
-    <?php include("styling/header.php"); ?>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/483fde4a98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling/style.css">
+    </head>
+    <body>
     <h1>Forskjellige nyttige kilder i IT fag</h1>
     <br>
     <div>
