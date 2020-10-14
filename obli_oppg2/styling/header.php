@@ -20,7 +20,7 @@
             <li> <a href="#">Hci</a></li>
            <ul>
                 <li> <a href="#">universell utforming</a></li> 
-                <li> <a href="#">Grafisk design</a></li>
+                <li> <a href="#">Grafisk design & UX</a></li>
                 <li> <a href="#">Design thinking</a></li>
                 <ul>
                     <li> <a href="#">Personas</a></li>
