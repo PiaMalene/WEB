@@ -13,8 +13,8 @@ sidebar {
   margin: 0;
   padding: 0;
 }
-lor {
+.lor {
   padding: 1%;
-  margin: 10%;
+  margin: 0% 50% 5% 0%;
   position: left;
 }
