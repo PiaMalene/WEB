@@ -1,0 +1,135 @@
+a:link, a:visited{
+    color: inherit;
+    text-decoration: none; 
+}
+
+* {
+    font-family: 'Inter', sans-serif, 'FontAwesome'; 
+} 
+
+html, body{
+    margin: 0;
+    height: 100%;	
+}
+
+header{
+    background-color: #1D1D1B;
+    height: 10%;
+    width: 100%;
+    position: fixed; 
+    z-index: 100;
+}
+
+header #logo{
+    height: 90%;
+}
+
+section{
+    border-radius: 10px 10px 0px 0px;
+    background: white;
+    height: 90%;
+    padding-top: 10%;
+   /* overflow: hidden;  Tar bort scrolling effect, BARE MIDLERTIDIG */
+}
+
+nav {
+    top: 2%;
+    left: 80%;
+    width: 100%;
+    display: contents;
+}
+nav #login { /* Profilbilde */
+    height: 10%;
+    position: absolute;
+    right: 10%;
+}
+ 
+nav #linker {
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    width: 55%;
+    height: 100%;
+    top: 10%;
+    left: 50%;
+    text-align: right;
+    background-color: #EFF5F5;
+}
+
+nav #linker ul{
+    margin-top: 25%;
+    margin-right: 15%;
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: thin;
+    line-height: 58px;
+    letter-spacing: -0.05em;
+    padding-left: 0px;
+}
+
+nav .hamburger {
+    left: calc(100% - 80px);
+    top: -55px;
+    position: relative;
+    width: 50px;    
+    margin: 6px 0;
+	cursor: pointer;
+    background-color: #EFF5F5;
+    }
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    border-radius: 2px;
+    height: 5px;
+    margin: 8px;
+    transition: 0.4s;  
+}
+  
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+  
+  
+.change .bar2 {
+    opacity: 0;
+  }
+  
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+h1{
+    font-size: 6rem;
+    margin-top: 0px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgb(90, 90, 90);
+    text-align: center;
+}
+
+.valgTekst{
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+#status{
+    color: red;
+}
+
+.valgDato{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
