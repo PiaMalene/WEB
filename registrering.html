@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Kode skrevet av Elias W. H-W, sist endret 28.09.2020 -->
+        <title>Registrering</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" type="text/css" rel="stylesheet">
+        <link href="css/registrering.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/javascript.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     </head>
+        <script src="https://kit.fontawesome.com/23b3f08aa4.js" crossorigin="anonymous"></script>   
+        <body>
+        <header>  
+            <img id="logo" src="bilder/usn-logo.png">
+            <nav onclick="openMenu();changeMenu(this)"> <!--Kaller på java funksjonene når hamburgeren blir trykket på!-->
+                <div class="hamburger bar1"></div>
+                <div class="hamburger bar2"></div>
+                <div class="hamburger bar3"></div>
+                <div id="linker">
+                    <img id="login" src="bilder/login.png">
+                    <ul>  
+                        <li><a href="index.html">H J E M</a></li>
+                        <li><a href="logginn.html">L O G G  I N N</a></li>
+                        <li><a href="avstemning.html">A V S T E M N I N G</a></li>
+                        <li><a href="nominering.html">N O M I N E R I N G</a></li>
+                        <li><a href="registrering.html">R E G I S T R E R I N G</a></li>
+                        <li><a href="rapport.html">R A P P O R T</a></li>
+                    </ul>
+                </div>   
+                <style> 
+                 
+              </style> 
+        </header>
+        <section>
+            <form class="rForm">  
+                 <div class="bilde">
+                    <label for="pbilde">Velg en avatar</label>
+                      <img class="pbilde" id="pbilde" name="pbilde" src="bilder/login.png">
+                        <input type="file" name="image" class="pbilde" onchange="loadFile(event)" accept="image/jpeg, image/png" placeholder="Last opp bilde" required/>
+                        <script src="js/preview.js"></script>
+                </div>
+                  
+                <div class="kandidat">
+                  <label for="kandidat_navn">Fullt Navn</label>
+                  <input type="text" name="kandidat_navn" class="kandidat_navn" placeholder="&#xf406;" required>
+                </div>
+
+                <div class="tlfNr">
+                  <label for="tlfNr">Telefonr</label>
+                  <input type="tel" name="tlfNr" class="tlfNr" placeholder="&#xf879" value="" required>
+                </div>
+
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="email" placeholder="&#xf1fa" required>
+                </div>
+                
+                <div class="alder">
+                  <legend>Fødselsdato</legend>
+                  <label> <input type="date" name="alder" class="alder" placeholder="&#xf073" required></label>
+                </div>
+                
+                <div class="campus">
+                  <legend>Campus</legend>
+                  <div>
+                  <input id="q1" type="radio" name="radioBtn" class="campus_vestfold with-font" value="Vestfold" required> 
+                  <label for="q1">Vestfold</label>
+                  </div>
+                  <div>
+                  <input id="q2" type="radio" name="radioBtn" class="campus_bø with-font" value="Bø">
+                  <label for="q2">Bø</label>
+                  </div>  
+                  <input id="q3" type="radio" name="radioBtn" class="campus_ringerike with-font" value="Ringerike"> 
+                  <label for="q3">Ringerike</label>
+                  </div>
+                </div>
+                
+                <div class="fakultet">
+                    <label for="fakultet">Fakultet</label>
+                    <input type="fakultet" name="fakultet" class="fakultet" placeholder="&#xf19d" required>
+                  </div>
+
+                <div class="beskrivelse">
+                    <label for="beskrivelse">Kandidat Beskrivelse</label>
+                    <textarea name="beskrivelse" class="beskrivelse" maxlength="500"></textarea>
+                </div>
+
+                <div class="passord">
+                  <label for="passord">Passord</label>
+                  <input type="password" name="passord" class="passord" placeholder="&#xf084" required>
+                </div>
+
+                <div class="passordCnf">
+                    <label for="passordCnf">Bekreft Passord</label>
+                    <input type="password" name="passordCnf" class="passordCnf" placeholder="&#xf084" required>
+                </div>
+                
+                <button class="submit">Bekreft Registrering <i class="fas fa-check"></i></button>
+              
+              </form>
+        </section>
+    </body>
+</html>
