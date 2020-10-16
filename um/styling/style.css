@@ -1,15 +1,16 @@
 html,body,h1,h2,h3,h4,h5,h6 {
-	font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
 }
-sidebar {
+/*sidebar {
   z-index: 3;
   width: 250px;
   top: 43px;
   bottom: 0;
   height: inherit;
-  }
+  } */
   ul {
-  list-style-type: none;
+  list-style-type: auto;
   margin: 0;
   padding: 0;
 }
@@ -17,4 +18,20 @@ sidebar {
   padding: 1%;
   margin: 0% 50% 5% 0%;
   position: left;
+}
+
+/*styling av underside "uu_vurdering" */
+.vurdering {
+  color: #1A141D;
+  max-width: auto 1000px;
+  
+}
+.funFact {
+  float: right;
+  border: solid 2px #674675;
+  padding: 15px;
+  margin-right: 5%;
+  background-color: #1A141D;
+  color: aliceblue;
+  max-width: 300px;
 }
