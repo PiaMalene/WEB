@@ -1,6 +1,9 @@
-html,body,h1,h2,h3,h4,h5,h6 {
+html,body,h1,h2,h3,h4,h5,h6,p {
   font-family: "Roboto", sans-serif;
   margin: 20px;
+}
+li {
+  font-family: "Roboto", sans-serif;
 }
 /*sidebar {
   z-index: 3;
@@ -34,4 +37,8 @@ html,body,h1,h2,h3,h4,h5,h6 {
   background-color: #1A141D;
   color: aliceblue;
   max-width: 300px;
+}
+.sitat {
+  margin-left: 3%;
+  max-width: 40%;
 }
