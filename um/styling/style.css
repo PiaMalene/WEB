@@ -1,9 +1,18 @@
-html,body,h1,h2,h3,h4,h5,h6,p {
-  font-family: "Roboto", sans-serif;
-  margin: 20px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-li {
+
+h1,h2,h3,h4,h5,h6,p, ul, li, {
   font-family: "Roboto", sans-serif;
+
+}
+main {
+  max-width: 100%;
+  width: 1400px;
+  margin: 18px auto;
+  padding: 0 50px;
+  box-sizing: border-box; 
 }
 /*sidebar {
   z-index: 3;
