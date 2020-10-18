@@ -42,3 +42,8 @@ li {
   margin-left: 3%;
   max-width: 40%;
 }
+.nettside {
+  border: rgb(218, 167, 0) 3px solid;
+  padding: 10px;
+  float: left;
+}
