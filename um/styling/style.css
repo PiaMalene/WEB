@@ -3,9 +3,22 @@ body {
   padding: 0px;
 }
 
-h1,h2,h3,h4,h5,h6,p, ul, li, {
-  font-family: "Roboto", sans-serif;
+/* Lagt inn ekstra font */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
+h1,h2,h3,h4,h5,h6,p, ul, li {
+  font-family: "Open Sans","Roboto", sans-serif;
+}
+p {
+  font-size: 20px;
+  line-height: 31px;
+  color: #333333;
 }
 main {
   max-width: 100%;
@@ -55,4 +68,25 @@ main {
   border: rgb(218, 167, 0) 3px solid;
   padding: 10px;
   float: left;
+}
+
+/*styling av ux design*/
+.ux {
+  width: 70%;
+  position: relative;
+  left: 170px;;
+}
+.ux1 {
+ display: inline-block;
+  width: 260px;
+ position: absolute;
+  bottom: 150px;
+  left: 55%;
+}
+.kake {
+  padding: 50px;
+  background-color: rgb(193, 218, 224);
+  margin: 1em;
+  display: inline-block;
+  padding-right: 50%;
 }
