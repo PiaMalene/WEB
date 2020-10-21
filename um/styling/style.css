@@ -23,6 +23,7 @@ p {
 main {
   max-width: 100%;
   width: 1400px;
+  min-width: min-content;
   margin: 18px auto;
   padding: 0 50px;
   box-sizing: border-box; 
@@ -71,22 +72,28 @@ main {
 }
 
 /*styling av ux design*/
+
+/*UX design top bilde*/
 .ux {
   width: 70%;
   position: relative;
-  left: 170px;;
+  left: 7%;
+  min-width: 400px;
 }
+/*kakediagram*/
 .ux1 {
  display: inline-block;
   width: 260px;
- position: absolute;
   bottom: 150px;
-  left: 55%;
 }
+/*kake tekst*/
 .kake {
   padding: 50px;
   background-color: rgb(193, 218, 224);
   margin: 1em;
   display: inline-block;
-  padding-right: 50%;
+  min-width: 200px;
+}
+.copypaste, .copypaste p {
+  color: #dd1e1b;
 }
