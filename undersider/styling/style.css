@@ -1,8 +1,19 @@
+/*basic for alle sider*/
 body {
   margin: 0px;
   padding: 0px;
 }
+body {
+  -ms-overflow-style: scrollbar; }
 
+@media screen and (max-width: 480px) {
+  html, body {
+    min-width: 320px; } }
+html {
+  box-sizing: border-box; }
+
+  body {
+    line-height: 2; }
 /* Lagt inn ekstra font */
 @font-face {
   font-family: 'Open Sans';
@@ -16,7 +27,7 @@ h1,h2,h3,h4,h5,h6,p, ul, li {
   font-family: "Open Sans","Roboto", sans-serif;
 }
 p {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 31px;
   color: #333333;
 }
@@ -82,9 +93,11 @@ main {
 }
 /*kakediagram*/
 .ux1 {
- display: inline-block;
+ display: inline;
   width: 260px;
   bottom: 150px;
+  float: right;
+  margin: 30px;
 }
 /*kake tekst*/
 .kake {
