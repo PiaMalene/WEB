@@ -14,7 +14,7 @@ html {
 
   body {
     line-height: 2; }
-/* Lagt inn ekstra font */
+/* Font familie*/
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -31,30 +31,24 @@ p {
   line-height: 31px;
   color: #333333;
 }
+/*alt hovedinnhold*/
 main {
   max-width: 100%;
-  width: 1200px;
+  width: 1000px;
   min-width: min-content;
   margin: 18px auto;
   padding: 0 50px;
   box-sizing: border-box; 
 }
-/*sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-  } */
-  ul {
+
+ul {
   list-style-type: auto;
   margin: 0;
   padding: 0;
 }
-.lor {
-  padding: 1%;
-  margin: 0% 50% 5% 0%;
-  position: left;
+/*For å få stort mellomrom: legg inn <div class="big"> </div> */
+.big {
+  margin: 180px;
 }
 
 /*styling av underside "uu_vurdering" */
@@ -82,11 +76,21 @@ main {
   float: left;
 }
 
+
 /*styling av ux design*/
 
+.mainUx h1 {
+  color: #CE5636;
+}
 /*UX design top bilde*/
+.uxFrontBack {
+  width: 400px;
+  float: right;
+  display: block;
+}
+/*ux design undersider*/
 .ux {
-  width: 70%;
+  width: 90%;
   position: relative;
   left: 7%;
   min-width: 400px;
@@ -94,19 +98,32 @@ main {
 /*kakediagram*/
 .ux1 {
  display: inline;
-  width: 260px;
-  bottom: 150px;
+  width: 340px;
   float: right;
-  margin: 30px;
+  margin: 15px;
 }
 /*kake tekst*/
 .kake {
   padding: 50px;
-  background-color: rgb(193, 218, 224);
+  background-color: rgb(224, 214, 193);
   margin: 1em;
   display: inline-block;
   min-width: 200px;
 }
-.copypaste, .copypaste p {
-  color: #dd1e1b;
+/*interaksjonsdesign*/
+.interimg {
+  width: 450px;
+  float: right;
+}
+/*5 dimensjoner av Interaksjonsdesign:*/
+.listBox {
+  max-width: 600px;
+  background-color: rgb(224, 214, 193);
+  padding: 15px;
+  padding-right: 20px;
+  margin: 1px;
+  display: inline-block;
+}
+.listBox li {
+  margin-left: 30px;
 }
