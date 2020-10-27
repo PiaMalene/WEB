@@ -23,7 +23,7 @@ html {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-h1,h2,h3,h4,h5,h6,p, ul, li {
+h1,h2,h3,h4,h5,h6,p, ul, li, a {
   font-family: "Open Sans","Roboto", sans-serif;
 }
 p {
@@ -48,7 +48,7 @@ ul {
 }
 /*For å få stort mellomrom: legg inn <div class="big"> </div> */
 .big {
-  margin: 180px;
+  margin: 150px;
 }
 
 /*styling av underside "uu_vurdering" */
@@ -80,13 +80,17 @@ ul {
 /*styling av ux design*/
 
 .mainUx h1 {
-  color: #CE5636;
+  color: #b83f53;
 }
 /*UX design top bilde*/
 .uxFrontBack {
   width: 400px;
   float: right;
   display: block;
+}
+/*e-bok bilde*/
+.idf {
+  width: 40%;
 }
 /*ux design undersider*/
 .ux {
@@ -105,7 +109,7 @@ ul {
 /*kake tekst*/
 .kake {
   padding: 50px;
-  background-color: rgb(224, 214, 193);
+  background-color: rgb(241, 232, 211);
   margin: 1em;
   display: inline-block;
   min-width: 200px;
@@ -118,7 +122,7 @@ ul {
 /*5 dimensjoner av Interaksjonsdesign:*/
 .listBox {
   max-width: 600px;
-  background-color: rgb(224, 214, 193);
+  background-color: rgb(211, 239, 241);
   padding: 15px;
   padding-right: 20px;
   margin: 1px;
@@ -126,4 +130,8 @@ ul {
 }
 .listBox li {
   margin-left: 30px;
+}
+/*informasjonsarkitektur*/
+.konsept img {
+  width: 75%;
 }
