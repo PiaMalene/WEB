@@ -31,6 +31,7 @@ p {
   line-height: 31px;
   color: #333333;
 }
+
 /*alt hovedinnhold*/
 main {
   max-width: 100%;
@@ -51,7 +52,12 @@ ul {
   margin: 150px;
 }
 
-/*styling av underside "uu_vurdering" */
+/*
+styling av undersider: 
+
+uu_vurdering 
+*/
+
 .vurdering {
   color: #1A141D;
   max-width: auto 1000px;
@@ -59,11 +65,11 @@ ul {
 }
 .funFact {
   float: right;
-  border: solid 2px #674675;
+  border: dashed 2px rgba(64, 75, 85, 0.411);
   padding: 15px;
   margin-right: 5%;
-  background-color: #1A141D;
-  color: aliceblue;
+  background-color: #b8d5e0;
+  color: rgb(64, 75, 85);
   max-width: 300px;
 }
 .sitat {
@@ -77,7 +83,10 @@ ul {
 }
 
 
-/*styling av ux design*/
+/*
+styling av ux design
+*/
+
 
 .mainUx h1 {
   color: #b83f53;
@@ -114,6 +123,11 @@ ul {
   display: inline-block;
   min-width: 200px;
 }
+/*brukere*/
+.uxDesign img {
+  width: 60%;
+  float: right;
+}
 /*interaksjonsdesign*/
 .interimg {
   width: 450px;
@@ -134,4 +148,35 @@ ul {
 /*informasjonsarkitektur*/
 .konsept img {
   width: 75%;
+}
+
+/*
+Styling av grafisk design
+*/
+/*top bilde + tekst*/
+#header {
+  background-image: url("https://www.vhv.rs/file/max/35/355017_graphic-design-png.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 90%;
+  padding: 150px;
+  font-size: 150%;
+  bottom: 150px; 
+}
+/*overskiften*/
+#header h1 {
+  text-shadow: 2px 2px #c73f00;
+  color: #ff9100 ;
+  font-size: 4em !important;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: oblique;
+  position: relative;
+  top: 70px;
+  padding: 50px;
+
+}
+.layoutimg {
+  width: 500px;
+  float: right;
 }
