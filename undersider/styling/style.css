@@ -1,0 +1,182 @@
+/*basic for alle sider*/
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  -ms-overflow-style: scrollbar; }
+
+@media screen and (max-width: 480px) {
+  html, body {
+    min-width: 320px; } }
+html {
+  box-sizing: border-box; }
+
+  body {
+    line-height: 2; }
+/* Font familie*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1,h2,h3,h4,h5,h6,p, ul, li, a {
+  font-family: "Open Sans","Roboto", sans-serif;
+}
+p {
+  font-size: 17px;
+  line-height: 31px;
+  color: #333333;
+}
+
+/*alt hovedinnhold*/
+main {
+  max-width: 100%;
+  width: 1000px;
+  min-width: min-content;
+  margin: 18px auto;
+  padding: 0 50px;
+  box-sizing: border-box; 
+}
+
+ul {
+  list-style-type: auto;
+  margin: 0;
+  padding: 0;
+}
+/*For å få stort mellomrom: legg inn <div class="big"> </div> */
+.big {
+  margin: 150px;
+}
+
+/*
+styling av undersider: 
+
+uu_vurdering 
+*/
+
+.vurdering {
+  color: #1A141D;
+  max-width: auto 1000px;
+  
+}
+.funFact {
+  float: right;
+  border: dashed 2px rgba(64, 75, 85, 0.411);
+  padding: 15px;
+  margin-right: 5%;
+  background-color: #b8d5e0;
+  color: rgb(64, 75, 85);
+  max-width: 300px;
+}
+.sitat {
+  margin-left: 3%;
+  max-width: 40%;
+}
+.nettside {
+  border: rgb(218, 167, 0) 3px solid;
+  padding: 10px;
+  float: left;
+}
+
+
+/*
+styling av ux design
+*/
+
+
+.mainUx h1 {
+  color: #b83f53;
+}
+/*UX design top bilde*/
+.uxFrontBack {
+  width: 400px;
+  float: right;
+  display: block;
+}
+/*e-bok bilde*/
+.idf {
+  width: 40%;
+}
+/*ux design undersider*/
+.ux {
+  width: 90%;
+  position: relative;
+  left: 7%;
+  min-width: 400px;
+}
+/*kakediagram*/
+.ux1 {
+ display: inline;
+  width: 340px;
+  float: right;
+  margin: 15px;
+}
+/*kake tekst*/
+.kake {
+  padding: 50px;
+  background-color: rgb(241, 232, 211);
+  margin: 1em;
+  display: inline-block;
+  min-width: 200px;
+}
+/*brukere*/
+.uxDesign img {
+  width: 60%;
+  float: right;
+}
+/*interaksjonsdesign*/
+.interimg {
+  width: 450px;
+  float: right;
+}
+/*5 dimensjoner av Interaksjonsdesign:*/
+.listBox {
+  max-width: 600px;
+  background-color: rgb(211, 239, 241);
+  padding: 15px;
+  padding-right: 20px;
+  margin: 1px;
+  display: inline-block;
+}
+.listBox li {
+  margin-left: 30px;
+}
+/*informasjonsarkitektur*/
+.konsept img {
+  width: 75%;
+}
+
+/*
+Styling av grafisk design
+*/
+/*top bilde + tekst*/
+#header {
+  background-image: url("https://www.vhv.rs/file/max/35/355017_graphic-design-png.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  opacity: 90%;
+  padding: 150px;
+  font-size: 150%;
+  bottom: 150px; 
+}
+/*overskiften*/
+#header h1 {
+  text-shadow: 2px 2px #c73f00;
+  color: #ff9100 ;
+  font-size: 4em !important;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: oblique;
+  position: relative;
+  top: 70px;
+  padding: 50px;
+
+}
+.layoutimg {
+  width: 500px;
+  float: right;
+}
