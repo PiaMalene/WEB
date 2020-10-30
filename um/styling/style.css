@@ -23,7 +23,7 @@ html {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-h1,h2,h3,h4,h5,h6,p, ul, li, a {
+h1,h2,h3,h4,h5,h6,p, ul, li, a, dl {
   font-family: "Open Sans","Roboto", sans-serif;
 }
 p {
@@ -39,13 +39,17 @@ main {
   min-width: min-content;
   margin: 18px auto;
   padding: 0 50px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 ul {
   list-style-type: auto;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
+}
+li {
+  list-style-type: circle;
+  margin-left: 20px;
 }
 /*For å få stort mellomrom: legg inn <div class="big"> </div> */
 .big {
@@ -53,35 +57,39 @@ ul {
 }
 
 /*
-styling av undersider: 
+styling av undersider:
 
-uu_vurdering 
+uu_vurdering
 */
 
-.vurdering {
-  color: #1A141D;
-  max-width: auto 1000px;
-  
+.vurdering h1 {
+  color: rgb(53, 141, 100);
 }
+
 .funFact {
   float: right;
   border: dashed 2px rgba(75, 186, 238, 0.76);
   padding: 15px;
-  margin-right: 5%;
-  background-color: #c7e9f5;
-  color: rgb(23, 146, 184);
+  margin: 4%;
+  background-color: #d6f5f0;
+  color: rgb(18, 108, 136);
   max-width: 300px;
 }
 .sitat {
-  margin-left: 3%;
+  margin-left: 0%;
   max-width: 40%;
+  float: right;
 }
 .nettside {
   border: rgb(218, 167, 0) 3px solid;
   padding: 10px;
   float: left;
+  margin: 10px;
 }
 
+.skilt {
+  width: 530px;
+}
 
 /*
 styling av ux design
@@ -157,18 +165,19 @@ Styling av grafisk design
 #headerGrafi {
   background-image: url("https://www.vhv.rs/file/max/35/355017_graphic-design-png.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   position: relative;
   background-color: #facbc213;
   padding: 150px;
   font-size: 150%;
-  bottom: 150px; 
+  bottom: 150px;
+  z-index: -1;
 }
 
 /*overskiften*/
 #headerGrafi h1 {
-  text-shadow: 2px 2px #c73f00;
-  color: #ff9100 ;
+  text-shadow: 2px 2px 3px #5e2003;
+  color: #ff9d1c ;
   font-size: 4em !important;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-style: oblique;
@@ -180,4 +189,7 @@ Styling av grafisk design
 .layoutimg {
   width: 500px;
   float: right;
+}
+.GD h1, .GD h2{
+  color: #b83f53;
 }
