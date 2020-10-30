@@ -193,3 +193,16 @@ Styling av grafisk design
 .GD h1, .GD h2{
   color: #b83f53;
 }
+.gylneSnitt {
+  width: 450px;
+  float: right;
+  padding: 10px;
+}
+.ruleOfThirds {
+  width: 450px;
+  float: right;
+  padding: 10px;
+}
+.farge {
+  width: 600px;
+}
