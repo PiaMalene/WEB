@@ -165,7 +165,7 @@ Styling av grafisk design
 #headerGrafi {
   background-image: url("https://www.vhv.rs/file/max/35/355017_graphic-design-png.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   position: relative;
   background-color: #facbc213;
   padding: 150px;
@@ -176,8 +176,8 @@ Styling av grafisk design
 
 /*overskiften*/
 #headerGrafi h1 {
-  text-shadow: 2px 2px #c73f00;
-  color: #ff9100 ;
+  text-shadow: 2px 2px 3px #5e2003;
+  color: #ff9d1c ;
   font-size: 4em !important;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-style: oblique;
@@ -189,4 +189,7 @@ Styling av grafisk design
 .layoutimg {
   width: 500px;
   float: right;
+}
+.GD h1, .GD h2{
+  color: #b83f53;
 }
