@@ -36,6 +36,7 @@
         <li><a href="#lover">Lover og Regler: WCAG</a></li>
         <li><a href="#nettsted">Valg av nettsted</a></li>
         <li><a href="#krav">Krav og rettningslinjer</a></li>
+        <li><a href="#manuell">Manuell sjekk</a></li>
         <li> <a href="#val">Automatisk validator</a></li>
         <li> <a href="#konklusjon">Konklusjon - Hvordan sikre reell uu på nettsteder?</a></li>
         <li><a href="#vKilder">Kilder</a></li>
@@ -97,10 +98,14 @@
     <p>Vi har gjennomførte vurdering av nettsiden til <b> McDonalds. </b> 
      Vurderingen var på nettsiden https://www.mcdonalds.com/no/nb-no.html 
      (Dato: 17.10.20.)</p>
+     <p>Testingen har hovedfokus på startsiden, og omfatter ikke McDonalds sin app, eller gjennomføring av kjøp. <br>
+        Vi kommer til å vurdere nettsiden ut fra rådene på Difi sine nettsider, og vil bruke en del verktøy for å hjelpe med å teste forskjellige aspekter av nettstedet. </p>
+
 <div class="nettside"> <a href="um/filer/bilder/mc11.png" target="_blank"> <i class="fas fa-file-image fa-xs" > </i>Skjermbilde av nettside </a> </div> 
   <div class="nettside">  <a href="https://www.mcdonalds.com/no/nb-no.html"> <i class="fas fa-link fa-xs"></i> Til hjemmeside </a>
 </div> 
-<div class="big"></div>
+
+        <div class="big"></div>
 <h1 id="krav">Krav</h1>
 
         <h3>Hva ser vi etter på nettstedet?</h3>
@@ -148,8 +153,11 @@
     Jeg har valgt å bruke «colour contrast analycer (cca)» for å sjekke at de ulike elementene på nettsiden overholder WCAG kravene. 
     <br> Ved hjelp av cca kan jeg zoome inn på nettsiden og sammenligne kontrastverdier ved hjelp av et 'fargedråpe' verktøy.</p>
     
-    <p class="ccaTekst"> <b> Resultat: </b> <br> McDonalds sin nettside har god kontrast på alle elementene deres med unntak av 'les mer' knappen på bildekarusellen der de har (hvis jeg har tolket kravene riktig) ikke tilstrekkelig kontrast. 
-        <br> Dette virker som en slags glipp fra deres side, da alle de andre knappene har gode kontrastverdier. </p>
+    <p class="ccaTekst"> <b> Resultat: </b> <br> Bakgrunnen på Mcdonalds sin hjemmeside er hvit, og mesteparten av teksten er svart, noe som gir en veldig god kontrast. <br> 
+        <br> Det er derimot også litt bruk av gult og hvitt sammen, da det er hovedfargene til McDonalds. <br> Problemet med de fargene sammen derimot, er at kontrasten bare er på 1,7:1, langt under akseptable nivå. 
+    </p> <p> Mcdonalds bruker også litt forskjellig tekst på et bilde med gult og hvitt, noe som burde vært unngått. <br> <br>
+        Eller så har McDonalds sin nettside en god kontrast på alle elementene deres med unntak av 'les mer' knappen på bildekarusellen der de ikke har (hvis jeg har tolket kravene riktig) tilstrekkelig kontrast. 
+        <br> Dette virker som en glipp fra deres side, da alle de andre knappene har gode kontrastverdier, men kunne enkelt vært oppdaget og fikset </p>
         
         <div class="ccaDiv">
             <img src="um/filer/bilder/mc1.png" alt="zoom av bokstaver på mcdonalds nettside">
@@ -159,6 +167,42 @@
             <img src="um/filer/bilder/mc03.png" alt="8,7:1 Kontrast på farge på bokstav, og bakgrunn" class="cca">
         
 <div class="big"></div>
+
+<h1 id="manuell">Manuelt resultat: Hva er bra | Hva er dårlig</h1>
+<p>Jeg vil nå se rundt på nettsiden og manuelt prøve ut om elementene har et godt brukergrensesnitt.</p>
+<br>
+<h2> Bildekarusell: </h2> <p> <br>
+    <img class="bildekarusell" src="um/filer/bilder/mc111.png" alt="Bildekarusell 'stolt produsent av junkfood'">
+    Øverst på siden er det en bildekarusell med tre nyheter som byttes mellom, og det er tyderlig lagt inn mye ekstra arbeid for at karusellen skal være så intuitiv og fungere for så mange som mulig. <br> <br>
+    Under nyheten er det en liten sirkler for hver av de tre sakene, og for å indikere hvilken sak som er den nåværende sirkelen, har den en mørkere farge. Rundt den aktive sirkelen vil en større sirkel sakte fylle seg ut for å indikere hvor lenge det er til den neste saken kommer.  <br> <br>
+    Videre hvis man går over bildet med pekeren vil karusellen automatisk bli satt på pause, og når man fjerner pekeren vil karusellen starte igjen. Man kan også velge hvilke bilde man ønsker å se på ved å klikke på en av de tre sirkler nederst på bildet, og ved siden av sirklene er det en start/stopp knapp som man kan trykke på for å stoppe karusellen helt. 
+    <br> <br> Alt dette hjelper brukere med å forstå og gir dem mulighet til å velge det som passer dem best. 
+    
+</p>
+<br>
+<h2>Skjermleser</h2>
+<p>Bildekarusellen fungere også ypperlig i kombinasjon med en skjermleser. Man blir først fortalt at det er en karusell, og deretter lest opp saken, karusellen er også her automatisk satt på pause. 
+    <br> 
+    For knappen der det står «les mer» vil skjermleseren si «Kobling, les mer», og knappene er nummerert («slide 2 of 3»), og er satt som «aktiv» for den saken man er på. 
+    <br>
+    Det eneste negative er at start/stopp knappen ikke har noen forklaring, og blir dermed lest opp som bare «knapp». 
+   <br> 
+    Header og foter delene av siden fungere også bra, og blir lest opp riktig av skjermleseren. 
+    <br> <br>
+    Når det gjelder resten av siden derimot, fungerte den dårlig når vi prøvde å navigere med skjermleseren. </p> 
+
+    <ul>Nedover på nettsiden kan man se det står fem forskjellige saker:
+        <li>Om vår mat</li>
+        <li>bestill på nett</li>
+        <li>McDelivery</li>
+        <li>Søk jobb</li>
+        <li>feedback. </li>
+    </ul>
+   <p>Skjermleseren derimot, leser verken opp noen alternativ tekst for bildene, eller skriften under bildene, så alt den leser opp er selve knappen som bare sier «se mer». 
+      <br> Nå har jeg aldri brukt en skjermlese før, så det er mulig at jeg gjorde det feil. <br> <br> Derimot så hvis dette virkelig ikke fungerer, så er det et svært utestengende avvik, som det er veldig enkelt å teste og fikse, så et slik avvik er helt uakseptabelt for en nettside. <br>
+</p>
+    
+
 
 
 <h1 id="val">Validator resultat</h1>
@@ -203,6 +247,7 @@ Spesielt <b> Difi.no </b> har en hjelpeside som heter; <a href="https://uu.difi.
     <li>https://www.mcdonalds.com/no/nb-no.html</li>
     <li>https://uu.difi.no/</li>
     <li>https://uu.difi.no/krav-og-regelverk/losningsforslag-web</li>
+    <li>https://lovdata.no/dokument/NL/lov/2017-06-16-51#KAPITTEL_3</li>
 
 </ul>
 </main>

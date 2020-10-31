@@ -90,7 +90,10 @@ uu_vurdering
   float: left;
   margin: 10px;
 }
-
+.bildekarusell {
+  float: right;
+  padding: 15px;
+}
 .skilt {
   width: 430px;
 }
