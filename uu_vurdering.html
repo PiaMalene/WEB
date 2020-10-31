@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css?family=Roboto&effect=anaglyph">
     <title>uu-vurdering</title>
 </head>
-<body class="vurdering">
+<body class="vurdering" id="vurTop">
     <header>
         <div class="topnav"> 
             <a href="index.html">Hjem</a>
@@ -33,9 +33,11 @@
 
     <ul> <h2> Innholdsfortegnelse </h2>
         <li><a href="#innledning">Innledning</a></li>
-        <li><a href="#lover">Lover og Regler</a></li>
-        <li><a href="#nettsted">Nettsted</a></li>
-        <li><a href="#krav">Krav</a></li>
+        <li><a href="#lover">Lover og Regler: WCAG</a></li>
+        <li><a href="#nettsted">Valg av nettsted</a></li>
+        <li><a href="#krav">Krav og rettningslinjer</a></li>
+        <li> <a href="#val">Automatisk validator</a></li>
+        <li> <a href="#konklusjon">Konklusjon - Hvordan sikre reell uu på nettsteder?</a></li>
         <li><a href="#vKilder">Kilder</a></li>
     </ul>
 <br> 
@@ -105,7 +107,9 @@
         <p>Det er mange ting å ta hensyn til når det gjelder universell utforming på et nettsted. 
             Vi vil nå forklare litt rundt en del av aspektene man må huske på, og deretter se på McDonals nettsted, og sjekke hva som er bra, 
             og om det er noen feil eller mangler hvor de burde gjort noe annerledes. </p>
-<h2>Bilde & Grafikk</h2>
+
+<br> <br>
+            <h2>Bilde & Grafikk</h2>
 
 <img src="https://www.shillingtoneducation.com/content-blog/uploads/2015/10/Basic-Graphic-Design-Principles-Illustration.jpg" alt="illustrasjon av typer balanse på bilder" class="balance">
 
@@ -118,6 +122,11 @@
      <br>
         Man skal heller ikke ha bilde av tekst så langt som det er mulig. Dette kommer av at tekstkvaliteten blir dårlig ved forstørring, og hjelpemiddel for dyslektikere ikke kan dra nytte av teksten i bildet.
         </p> 
+        <p>McDonalds sin nettside er enkelt og oversiktlg delt opp </p>
+        
+        <p> <b>Resultat:</b> <br>
+            Vi har prøvd å få opp alt tekst på nettsidens bilder, men får det bare til på noen få av dem. Det er noe usikkert om det er utelatt alt tekst, eller om det er noe vi gjør feil. </p>
+        <br> <br>
     <h2> Farge & Kontrast</h2>
     <p>Det er viktig at alt innhold, og da særlig tekst, har en god lesbarhet slik at flest mulig kan lese det. 
         Dette gjør man ved å ha tilstrekkelig kontrast mot bakgrunnen. 
@@ -129,29 +138,66 @@
     Liten tekst krever en høyere kontrast for å ha god lesbarhet. 
     WCAG 2.0 stiller derfor ulike krav til kontrastverdi for stor og liten tekst. 
     Dersom bakgrunn og tekst har varierende farge, eller er gradert, skal man måle mellom den svakeste kontrasten.
-    </p> <p>
-   <b> Kravet til kontrast mellom tekst og bakgrunn er: </b> <br>
+    </p> 
+    <br>
+   <h3> Kravet til kontrast mellom tekst og bakgrunn er: </h3> <p>
     -	4.5:1 for liten tekst <br>
     -	3.0:1 for stor eller fet tekst <br>
     </p>
     <p>
     Jeg har valgt å bruke «colour contrast analycer (cca)» for å sjekke at de ulike elementene på nettsiden overholder WCAG kravene. 
     <br> Ved hjelp av cca kan jeg zoome inn på nettsiden og sammenligne kontrastverdier ved hjelp av et 'fargedråpe' verktøy.</p>
-    <p class="ccaTekst">McDonalds sin nettside har god kontrast på alle elementene deres med unntak av 'les mer' knappen på bildekarusellen der de har (hvis jeg har tolket kravene riktig) ikke tilstrekkelig kontrast. </p>
-<img src="um/filer/bilder/mc1.png" alt="zoom av bokstaver på mcdonalds nettside">
-<img class="cca" src="um/filer/bilder/mc3.png" alt="Kontrast på farge på bokstav, og bakgrunn">
-<img src="" alt="">
-<img src="" alt="">
-<img src="" alt="">
+    
+    <p class="ccaTekst"> <b> Resultat: </b> <br> McDonalds sin nettside har god kontrast på alle elementene deres med unntak av 'les mer' knappen på bildekarusellen der de har (hvis jeg har tolket kravene riktig) ikke tilstrekkelig kontrast. 
+        <br> Dette virker som en slags glipp fra deres side, da alle de andre knappene har gode kontrastverdier. </p>
+        
+        <div class="ccaDiv">
+            <img src="um/filer/bilder/mc1.png" alt="zoom av bokstaver på mcdonalds nettside">
+            <img src="um/filer/bilder/mc01.png" alt="zoom av bokstav m med bedre kontrast"> <br>
+        </div>
+            <img class="cca" src="um/filer/bilder/mc3.png" alt="2,8:1 Kontrast på farge på bokstav, og bakgrunn">
+            <img src="um/filer/bilder/mc03.png" alt="8,7:1 Kontrast på farge på bokstav, og bakgrunn" class="cca">
+        
+<div class="big"></div>
+
+
+<h1 id="val">Validator resultat</h1>
+<p>Nå som vi har sett litt på McDonalds nettsted manuelt, skal vi bruker noen automatiske validatorere for å se litt dypere inn i koden. </p>
+<br>
+
+<h3>Tingtun Page checker</h3>
+<p>På <a href="http://checkers.eiii.eu/en/pagecheck/">Checkers.eiii</a> kan man sjekke et nettsteds tilgjengelighet utifra sidens kode. </p>
+<img src="um/filer/bilder/score.png" alt="test resultat fra Validator med 26 feil">
+<p>Her viser testen at det, ifølge den, er 26 feil på siden. <br> Blant feilene er det blant annet; 
+    <br> - Likt id brukt flere steder.  
+    <br> - Tomme linker uten innhold, alt text eller tittel. 
+    <br> - Overskrifter uten innhold. <br>
+</p> <br>
+
 <h2>Optimalisering</h2>
-<p>Det er viktig å ha en rask nettside slik at folk med dårlig nett / på mobil etc. har mulighet til å bruke siden smertefritt
-    Sjekk netthastighet med: https://gtmetrix.com/reports/www.mcdonalds.com/oIGA2xZD 
-    Bilder er unødvendig store. Mange av ikonene brukt på siden (sosiale medier, appstore, start stopp knapp) er unødvendig store, og bruker mange ressurser på å bli lastet inn. Her kunne bildene vært 80% mindre. 
-    Google maps tar opp mange unødvendige ressurser. Dette kunne vært halvparten så resurskrevende ved å bruke komprimering. Det er også brukt mye javascript i løpet av innlastingen av siden. Dette er unødvendig og legger til en del ekstra arbeid for maskinen og sakker ned innlasting.
-    </p>
-<p></p>
+<p>Det er viktig å ha en rask nettside slik at folk med dårlig nettverk eller mobil også har lik mulighet til å bruke nettsiden.
+ <br> </p> <br>
+ <h3>GTMetrix</h3> <p>
+   Vi sjekker da netthastighet med: <a href="https://gtmetrix.com/reports/www.mcdonalds.com/oIGA2xZD">gtmetrix.com</a> 
+ og derifra får vi tilbakemelding om hvor rask siden er og hva som drar hastigheten ned: <br>
+ <img src="um/filer/bilder/GTmetrix.png" alt="score fra GTmetrix gir en c (76%)"> <br>
+ <br> <b> bilder er unødvendig store. </b>
+        Mange av ikonene brukt på siden (sosiale medier, appstore, start stopp knapp) er unødvendig store, og bruker mange ressurser på å bli lastet inn. Her kunne bildene vært 80% mindre. 
+   <br> <b> Google maps tar også opp mange unødvendige ressurser. </b> Dette kunne vært halvparten så resurskrevende ved å bruke komprimering. 
+   <br> Det er også brukt mye javascript i løpet av innlastingen av siden. Dette er unødvendig og legger til en del ekstra arbeid for maskinen og sakker ned innlasting.
+ <br>  <br> Her virker det også som om det er mye rom for forbedringer fra McDonalds. </p>
+<br> <br>
 
+<h1 id="konklusjon">Konklusjon - Hvordan sikre reell uu på nettsteder?</h1>
+<p>Som vi nå har sett er det mange ting som er vanskelig å manuelt sjekke på et nettsted, og en automatisk validator kan hjelpe mye med hvordan man kan forbedre brukergrensesnittet. <br>
+Det er derimot også viktig å også sjekke nettstedet selv, da det er mye en validator ikke kan sjekke for deg. 
+<br> For eksempel så vil en validator kunne se om alle bilder har alt tekst, men man må selv gå inn og sjekke at alt teksten faktisk passer med bildet.
+<br> <br> Så som konklusjon så det er vanskelig å sikre reell uu, men det er veldig mange gode gratis hjelpemiddler og råd på nettet som kan hjelpe langt på vei. <br> <br>
+Spesielt <b> Difi.no </b> har en hjelpeside som heter; <a href="https://uu.difi.no/krav-og-regelverk/losningsforslag-web">Løsningsforslag for web</a> Hvor det er veldig mange gode råd og verktøy for å sikre universell utforming. <br> 
+<br> 
+<div class="big"></div>
 
+<a href="#vurTop">Tilbake til toppen</a>
 <h1 id="vKilder">Kilder</h1>
 <ul>
     <li>https://www.mcdonalds.com/no/nb-no.html</li>

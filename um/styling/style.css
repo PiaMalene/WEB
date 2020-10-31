@@ -99,8 +99,15 @@ uu_vurdering
   float: right;
   padding: 15px;
 }
+.ccaDiv {
+  display: inline-block;
+  float: left;
+  width: 100px;
+}
 .cca {
   width: 300px;
+  position: relative;
+  left: 10%;
 }
 .ccaTekst {
   float: left;
