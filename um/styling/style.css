@@ -36,7 +36,7 @@ p {
 main {
   max-width: 100%;
   width: 1000px;
-  min-width: min-content;
+  min-width: 320px;
   margin: 18px auto;
   padding: 0 50px;
   box-sizing: border-box;
@@ -65,6 +65,9 @@ uu_vurdering
 .vurdering h1 {
   color: rgb(53, 141, 100);
 }
+.vurdering h2 {
+  color: #03925b;
+}
 
 .funFact {
   float: right;
@@ -77,7 +80,8 @@ uu_vurdering
 }
 .sitat {
   margin-left: 0%;
-  max-width: 40%;
+  max-width: 50%;
+  min-width: 320px;
   float: right;
 }
 .nettside {
@@ -88,7 +92,22 @@ uu_vurdering
 }
 
 .skilt {
-  width: 530px;
+  width: 430px;
+}
+.balance {
+  width: 270px;
+  float: right;
+  padding: 15px;
+}
+.cca {
+  width: 300px;
+}
+.ccaTekst {
+  float: left;
+}
+.sterkKontrast {
+  width: 90%;
+  min-width: 300px;
 }
 
 /*
