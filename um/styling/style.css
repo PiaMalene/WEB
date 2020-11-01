@@ -56,6 +56,14 @@ li {
   margin: 150px;
 }
 
+/*hjemmeside*/
+.mainImage {
+  width: 100% ;
+  min-width: 320px;
+  
+}
+
+
 /*
 styling av undersider:
 
